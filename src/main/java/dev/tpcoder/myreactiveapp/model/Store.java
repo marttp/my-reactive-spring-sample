@@ -13,5 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Store {
   @Id
-  private Long id;
+  private Long ident;
+  private String storeName;
 }
