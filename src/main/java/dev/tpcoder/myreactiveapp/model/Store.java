@@ -9,6 +9,6 @@ import lombok.Data;
 @Table("store")
 public class Store {
   @Id
-  private Long id;
+  private Long identifier;
   private String name;
 }
