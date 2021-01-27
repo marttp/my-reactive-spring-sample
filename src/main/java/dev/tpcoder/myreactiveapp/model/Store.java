@@ -8,12 +8,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Table("book")
+@Table("store")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Book {
+public class Store {
   @Id
   private Long id;
-  private String title;
-  private String isbn;
+  private String name;
 }
