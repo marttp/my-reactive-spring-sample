@@ -25,7 +25,7 @@ public class BookService {
 
     public Mono<Book> save(BookDTO book) {
         Book newBook = new Book(book.getTitle(), book.getIsbn(), book.getAuthor(), book.getPrice());
-        return bookRepository.save(newBook).flatMap(Mono::just);
+        return bookRepository.save(newBook);
     }
 
     public Flux<Book> findByAuthor(String author) {
